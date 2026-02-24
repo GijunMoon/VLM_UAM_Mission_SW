@@ -1,13 +1,12 @@
 
 # 🦅 Cognitive-VLM-Pilot: Edge AI for Autonomous UAVs
-"From 'Seeing' to 'Understanding' in Unstructured Environments"
-기존의 반사적 제어(Reflexive Control)를 넘어, VLM(Vision-Language Model)을 활용해 상황을 인지하고 판단하는 하이브리드 드론 제어 아키텍처입니다.
+VLM(Vision-Language Model)을 활용해 상황을 인지하고 판단하는 하이브리드 드론 제어 아키텍처입니다.
 
 # 1. 프로젝트 배경
 **NASA의 화성 탐사 로버에서 영감을 받다**
 > NASA의 최신 연구(EELS Project, Cognitive Rover)에 따르면, 통신이 지연되는 화성이나 미지의 환경에서는 단순한 장애물 회피(Obstacle Avoidance)만으로는 부족합니다. 로봇은 "이 지형이 무엇이며(What), 어떻게 상호작용해야 하는가(How)"를 스스로 판단해야 합니다.
 
-본 프로젝트는 이 개념을 지구의 산악 구조(SAR) 및 험지 착륙(Off-road Landing) 시나리오에 적용했습니다. 고성능 클라우드 없이, 제한된 엣지 디바이스(Edge Device)에서 작동하는 경량화된 VLM(Vision-Language Model)을 통해 드론에게 '인지 능력'을 부여합니다.
+본 프로젝트는 이 개념을 지구의 산악 구조(SAR) 및 험지 착륙 시나리오에 적용했습니다. 고성능 클라우드 없이, 제한된 엣지 디바이스에서 작동하는 경량화된 VLM을 통해 드론에게 '인지 능력'을 부여합니다.
 
 # 2. 왜 VLM을 도입하는가?
 왜 빠르고 정확한 YOLO나 Lidar 대신 느린 VLM을 쓸까요? 기하학적(Geometric) 센서는 '의미(Semantics)'를 보지 못하기 때문입니다.
@@ -38,7 +37,7 @@ Layer 2: Slow Loop (Cognitive)
 
 # 5. 기술 스택 (Tech Stack)
 Hardware
-- Drone Platform: PX4 based Platform + Gazebo Simulation
+- Drone Platform: PX4 based Platform
 
 - Edge Computer: NVIDIA Jetson Orin Nano
 
@@ -52,3 +51,5 @@ Software
 - AI Engine: Ollama (Local Inference Server)
 
 - Core Model: smolvlm (256M params)
+
+- Simulation: Unity 3D (자체개발)
