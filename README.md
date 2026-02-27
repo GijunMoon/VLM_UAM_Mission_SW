@@ -1,3 +1,4 @@
+# Week Dev Challenge - 3일차
 
 # 🦅 Cognitive-VLM-Pilot: Edge AI for Autonomous UAVs
 VLM(Vision-Language Model)을 활용해 상황을 인지하고 판단하는 하이브리드 드론 제어 아키텍처입니다.
